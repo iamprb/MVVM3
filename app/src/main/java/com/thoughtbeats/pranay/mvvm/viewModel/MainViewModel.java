@@ -5,6 +5,11 @@ import com.thoughtbeats.pranay.mvvm.ui.common.mainActivity.contract.MainFragment
 
 public class MainViewModel extends AbstractViewModel<MainFragmentContract.Presenter>
 implements MainFragmentContract.Presenter{
+    @Inject
+    MainViewModel() {
+
+    }
+    
     @Override
     public MainFragmentContract.Presenter getPresenter() {
         return this;
