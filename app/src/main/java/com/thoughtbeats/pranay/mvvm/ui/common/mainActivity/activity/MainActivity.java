@@ -20,7 +20,7 @@ public class MainActivity extends AbstractBaseNormalActivity implements Abstract
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        navigationController.navigateToFirstFragment();
+        navigationController.navigateToMainFragment();
         
 
     }

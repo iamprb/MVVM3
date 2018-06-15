@@ -15,7 +15,7 @@ import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasActivityInjector;
 import dagger.android.HasServiceInjector;
 
-public abstract class ThoughtBeatApplication extends MultiDexApplication implements HasActivityInjector,HasServiceInjector{
+public  class ThoughtBeatApplication extends MultiDexApplication implements HasActivityInjector,HasServiceInjector{
     @Inject
     DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
     @Inject

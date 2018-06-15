@@ -7,8 +7,10 @@ import com.thoughtbeats.pranay.mvvm.ui.common.mainActivity.AbstractBaseMainActiv
 import com.thoughtbeats.pranay.mvvm.ui.common.mainActivity.AbstractBaseRegistrationFragment;
 import com.thoughtbeats.pranay.mvvm.ui.common.mainActivity.contract.MainFragmentContract;
 import com.thoughtbeats.pranay.mvvm.viewModel.MainViewModel;
+import com.thoughtbeats.pranay.mvvm.databinding.MainFragmentBinding;
 
-public class MainFragment extends AbstractBaseRegistrationFragment<MainFragmentContract.Presenter,MainViewModel,ViewDataBinding> {
+
+public class MainFragment extends AbstractBaseRegistrationFragment<MainFragmentContract.Presenter,MainViewModel,MainFragmentBinding> {
     @Override
     protected Class<MainViewModel> getViewModel() {
         return MainViewModel.class;

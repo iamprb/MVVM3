@@ -13,7 +13,11 @@ import dagger.Component;
 import dagger.android.AndroidInjectionModule;
 
 @ApplicationScope
-@Component(modules = {AndroidInjectionModule.class})
+@Component(modules = {
+               AndroidInjectionModule.class,
+                ApplicatonModule.class,
+                ActivityModule.class
+                })
 public interface ApplicationComponent {
     void inject(ThoughtBeatApplication application);
 

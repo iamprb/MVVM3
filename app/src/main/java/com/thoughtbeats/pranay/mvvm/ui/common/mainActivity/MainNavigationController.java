@@ -7,7 +7,7 @@ import com.thoughtbeats.pranay.mvvm.ui.common.mainActivity.fragment.MainFragment
 
 import javax.inject.Inject;
 
-public class MainNavigationController extends AbstractNavigationController {
+public class MainNavigationController extends AbstractNavigationController implements MainNavigationListner {
 
     @Inject
     public MainNavigationController(MainActivity mainActivity) {
@@ -18,7 +18,8 @@ public class MainNavigationController extends AbstractNavigationController {
         return R.id.container;
     }
 
-    public void navigateToFirstFragment(){
+    @Override
+    public void navigateToMainFragment() {
         changeFragment(MainFragment.getInstance(),true);
         updateFragment();
     }
