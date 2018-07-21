@@ -16,16 +16,14 @@ import retrofit2.converter.gson.GsonConverterFactory;
 })
 public class ApplicatonModule {
 
-    public static final String DB_NAME = "GrowerConnect.db";
+    public static final String DB_NAME = "DB name";
 
     @ApplicationScope
     @Provides
     NetworkService provideGrowerService() {
         return new Retrofit.Builder()
-                //.baseUrl("https://anantham.syngenta.com:86/MobileService.svc/") // production
-                .baseUrl("http://52.163.249.131:8883/MobileService.svc/")   // QA
-//                .baseUrl("http://10.34.156.44:8887/MobileService.svc/") // Local instance
-//                .baseUrl("http://10.34.156.44:8887/")
+                  .baseUrl("Your HTTP URL here")   // QA
+
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(new LiveDataCallAdapterFactory())
                 .build()
